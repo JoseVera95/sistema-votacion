@@ -34,8 +34,8 @@ class VotersImport implements ToModel, WithHeadingRow, WithValidation, SkipsEmpt
             [
                 'grado' => trim($row['grado']),
                 'nombres' => trim($row['nombres']),
-                'apellido' => trim($row['apellido']),
-                'foto' => $rutaFoto, // 🔥 automático
+                'apellidos' => trim($row['apellidos']),
+                'foto' => $rutaFoto, 
             ]
         );
     }
@@ -46,7 +46,7 @@ class VotersImport implements ToModel, WithHeadingRow, WithValidation, SkipsEmpt
             '*.cedula' => ['required'],
             '*.grado' => ['required'],
             '*.nombres' => ['required'],
-            '*.apellido' => ['required'],
+            '*.apellidos' => ['required'],
         ];
     }
 
@@ -56,7 +56,7 @@ class VotersImport implements ToModel, WithHeadingRow, WithValidation, SkipsEmpt
             '*.cedula.required' => 'La cédula es obligatoria.',
             '*.grado.required' => 'El grado es obligatorio.',
             '*.nombres.required' => 'El nombre es obligatorio.',
-            '*.apellido.required' => 'El apellido es obligatorio.',
+            '*.apellidos.required' => 'El apellido es obligatorio.',
         ];
     }
 }

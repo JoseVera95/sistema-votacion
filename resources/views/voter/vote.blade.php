@@ -189,7 +189,7 @@
                         class="voter-photo shadow">
 
                     <h4 class="mt-3 fw-bold">
-                        {{ $voter->nombres }} {{ $voter->apellido }}
+                        {{ $voter->nombres }} {{ $voter->apellidos }}
                     </h4>
 
                     <p class="mb-1 text-muted">
